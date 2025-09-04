@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Sign Language Recognition</title>
+    </head>
+    <style>
+        body{
+            background-color: black;
+        }
+
+        .jta-section .jta-wrapper{padding: 4rem 6% 4rem 6%; }
+        .jta-section .jta-wrapper .row{display: flex; justify-content: space-between; flex-wrap: wrap;}
+        .jta-section .jta-wrapper .row .column-1{flex-basis: 60%; background-color: black;}
+        .jta-section .jta-wrapper .row .column-1 .jta-image{position: relative; height: 100%; width: 100%;}
+        .jta-section .jta-wrapper .row .column-2{flex-basis: 40%; font-size: 'Monserrat Bold';  justify-content: center; text-align: center; background-color: white;}
+        .jta-section .jta-wrapper .row .column-2 h1{position: relative; font-size: 4rem; font-weight: 700; top:30px;  color: blueviolet}
+        .jta-section .jta-wrapper .row .column-2 .jta-image{position: relative; height: 20%; width: 20%; top: 60px;}
+        .jta-section .jta-wrapper .row .column-2 h2{position: relative; font-size: 2rem; font-weight: 700}
+        .jta-section .jta-wrapper .row .column-2 h2 span{font-weight: 400;}
+        .jta-section .jta-wrapper .row .column-2 .jta-body{position: relative; font-size: 1rem; bottom: 20px;}
+
+    </style>
+    <body>
+        <section
+            class="jta-section">
+            <div
+                class="jta-wrapper">
+                <div
+                    class="row">
+                    <div
+                        class="column-1">
+                        <img class="jta-image" src="{{ url_for('video_feed') }}" /> 
+                    </div>
+                    <div
+                        class="column-2">
+                        <h1>
+                            JTA
+                        </h1>
+                        <h2>
+                            Sign Language Recognition<br>
+                            Mask R-CNN <span>with</span> LSTM
+                        </h2>
+                        <p
+                            class="jta-body">
+                            for Real-Time Filipino Sign Language Detection
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </body>
+</html>
