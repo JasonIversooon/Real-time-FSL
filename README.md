@@ -10,6 +10,10 @@ Real-time-FSL is a system for real-time Filipino Sign Language (FSL) recognition
 - **Tkinter GUI** for live demo and user interaction
 - **Data preprocessing** scripts for annotation, normalization, and keypoint extraction
 
+## DEMO VIDEO
+![FSL](https://github.com/user-attachments/assets/f0763783-2a53-47ff-b47d-f9abe108e306)
+
+
 ## Project Structure
 
 - `GUI/`
